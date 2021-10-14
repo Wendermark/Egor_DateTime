@@ -13,13 +13,15 @@ namespace Egor_DateTime
         {
             var date = new Date(10, 5, 2004);
 
+            date.ShowDate();
+
             var secondDate = new Date(20, 5, 2004);
 
             date += 5;
 
             date.ShowDate();
 
-            Console.WriteLine((secondDate - date).ToString());
+            Console.WriteLine(secondDate - date);
 
 
             Console.ReadKey();

@@ -22,7 +22,7 @@ namespace Egor_DateTime.BaseElements
 
         public int Year { get; private set; }
 
-        public static int operator - (Date firstDate , Date secondDate) => (firstDate.Day + firstDate.Month*31 + firstDate.Year*365) - (secondDate.Day + secondDate.Month*31 + secondDate.Year*365);
+        public static string operator - (Date firstDate , Date secondDate) => $"Разность дат составляет { ((firstDate.Day + firstDate.Month*31 + firstDate.Year*365) - (secondDate.Day + secondDate.Month*31 + secondDate.Year*365) ).ToString() } дней";
 
         public void ShowDate() => Console.WriteLine($"День = {Day.ToString()}, Месяц = {Month.ToString()}, Год = {Year.ToString()}");
         
